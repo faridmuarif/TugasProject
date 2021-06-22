@@ -35,12 +35,12 @@ public class Murid {
         System.out.println("Murid belajar");
     }
 
-    public void bertanya(){
-        System.out.println("Murid bertanya");
+    public void mengerjakanlatihan(){
+        System.out.println("Murid mengerjakan latihan");
     }
 
-    public void berteman(){
-        System.out.println("Murid berteman");
+    public void jajan(){
+        System.out.println("Murid jajan");
     }
 
     public void naikkekelas(){
