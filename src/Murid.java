@@ -1,33 +1,26 @@
-import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Murid {
-    private int noinduk;
+    private String noinduk;
     private String namalengkap;
     private String jeniskelamin;
-    private Date tanggallahir;
+    private SimpleDateFormat tanggallahir;
     private String agama;
     private String alamat;
-    private Date tanggalditerima;
-    private int notelepon;
+    private SimpleDateFormat tanggalditerima;
+    private String notelepon;
 
     public Murid() {
     }
 
-    public Murid(int noinduk, String namalengkap, String jeniskelamin, Date tanggallahir, String agama, String alamat, Date tanggalditerima, int notelepon) {
+    public Murid(String noinduk, String namalengkap, String jeniskelamin) {
         this.noinduk = noinduk;
         this.namalengkap = namalengkap;
         this.jeniskelamin = jeniskelamin;
-        this.tanggallahir = tanggallahir;
-        this.agama = agama;
-        this.alamat = alamat;
-        this.tanggalditerima = tanggalditerima;
-        this.notelepon = notelepon;
     }
 
-
-    public Murid(String namalengkap, String jeniskelamin, String alamat) {
-        this.namalengkap = namalengkap;
-        this.jeniskelamin = jeniskelamin;
+    public Murid(String agama, String alamat) {
+        this.agama = agama;
         this.alamat = alamat;
     }
 
@@ -47,11 +40,11 @@ public class Murid {
         System.out.println("Murid naik ke kelas");
     }
 
-    public int getNoinduk() {
+    public String getNoinduk() {
         return noinduk;
     }
 
-    public void setNoinduk(int noinduk) {
+    public void setNoinduk(String noinduk) {
         this.noinduk = noinduk;
     }
 
@@ -71,11 +64,11 @@ public class Murid {
         this.jeniskelamin = jeniskelamin;
     }
 
-    public Date getTanggallahir() {
+    public SimpleDateFormat getTanggallahir() {
         return tanggallahir;
     }
 
-    public void setTanggallahir(Date tanggallahir) {
+    public void setTanggallahir(SimpleDateFormat tanggallahir) {
         this.tanggallahir = tanggallahir;
     }
 
@@ -95,19 +88,19 @@ public class Murid {
         this.alamat = alamat;
     }
 
-    public Date getTanggalditerima() {
+    public SimpleDateFormat getTanggalditerima() {
         return tanggalditerima;
     }
 
-    public void setTanggalditerima(Date tanggalditerima) {
+    public void setTanggalditerima(SimpleDateFormat tanggalditerima) {
         this.tanggalditerima = tanggalditerima;
     }
 
-    public int getNotelepon() {
+    public String getNotelepon() {
         return notelepon;
     }
 
-    public void setNotelepon(int notelepon) {
+    public void setNotelepon(String notelepon) {
         this.notelepon = notelepon;
     }
 }
